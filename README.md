@@ -10,9 +10,8 @@ Abre una terminal en la ubicación del repositorio.
 
 Ejecuta la aplicación utilizando el siguiente comando:
 
-shell
-Copy code
 python app.py
+
 La interfaz gráfica se abrirá y te permitirá cambiar la escala y la nota raíz. Además, puedes generar una melodía haciendo clic en el botón "Generar Melodía".
 
 Estructura del Repositorio
