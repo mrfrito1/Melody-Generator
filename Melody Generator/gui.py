@@ -66,12 +66,6 @@ text3_rendered = text3.render("Nota:", True, green)
 text3_rect = text3_rendered.get_rect()
 text3_rect.center = (width // 2, height // 1.8)
 
-# Agrega un botón para generar la melodía
-generate_button = pygame.Rect(width // 2 - 100, height // 1.5, 200, 50)
-font = pygame.font.Font(None, 36)
-generate_text = font.render("Generar Melodía", True, white)
-generate_text_rect = generate_text.get_rect(center=generate_button.center)
-
 # Variables iniciales para la escala y la nota
 scale_var = "Major"
 note_var = "g"
@@ -117,18 +111,38 @@ while running:
     screen.blit(escala_var_rendered, escala_var_rect)
 
     # Dibujar la nota actual
-    nueva_x = width // 2
-    nueva_y = height // 1.6
+    nota_x = width // 2
+    nota_x_y = height // 1.6
     note_var_rendered = text3.render(note_var, True, red)
     note_var_rect = note_var_rendered.get_rect()
-    note_var_rect.center = (nueva_x, nueva_y)
+    note_var_rect.center = (nota_x, nota_x_y)
     screen.blit(note_var_rendered, note_var_rect)
 
     # Dibujar el botón "Generar Melodía"
+    boton_x = width // 2
+    boton_x_y = height // 1.3  # Ajusta esta posición para mover el botón hacia abajo
+
+    # Calcula el ancho y alto del botón
+    boton_ancho = 200
+    boton_alto = 50
+
+    # Crea el rectángulo del botón
+    generate_button = pygame.Rect(boton_x - boton_ancho / 2, boton_x_y - boton_alto / 1.3, boton_ancho, boton_alto)
+
+    # Dibuja el botón
     pygame.draw.rect(screen, green, generate_button)
+
+    # Calcula el centro del botón para el texto
+    generate_text_rect = generate_button.copy()
+    generate_text_rect.topleft = (boton_x - boton_ancho / 2, boton_x_y - boton_alto / 2)
+
+    # Define el texto del botón "Generar Melodía"
+    font = pygame.font.Font(None, 36)
+    generate_text = font.render("Generar Melodía", True, white)
+
+    # Dibuja el texto en el botón
     screen.blit(generate_text, generate_text_rect)
 
-    # Actualizar la pantalla
     pygame.display.flip()
 
 # Salir de Pygame
