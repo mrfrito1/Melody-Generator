@@ -56,4 +56,5 @@ note_names = ["c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "b"]
 
 # Variables para la selección de escala y nota raíz
 scale_var = "Major"
-note_var = "g"
+note_var = "c"
+
