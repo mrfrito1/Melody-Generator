@@ -1,4 +1,5 @@
-Generador de Melodías MIDI en Python
+Generador de Melodías MIDI en Python.
+
 Este repositorio contiene una aplicación en Python que genera melodías MIDI. Puedes seleccionar la escala y la nota raíz para personalizar tus composiciones. La aplicación incluye una interfaz gráfica simple para facilitar la interacción.
 
 Uso
