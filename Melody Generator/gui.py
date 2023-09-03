@@ -68,7 +68,7 @@ text3_rect.center = (width // 2, height // 1.8)
 
 # Variables iniciales para la escala y la nota
 scale_var = "Major"
-note_var = "g"
+note_var = "c"
 
 # Bucle principal del juego
 running = True
@@ -148,3 +148,4 @@ while running:
 # Salir de Pygame
 pygame.quit()
 sys.exit()
+
