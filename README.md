@@ -30,8 +30,7 @@ The generated melodies will be saved as MIDI files in the same directory.
 Example
 An example generated melody is provided in generated_melody.mid using the default settings.
 
-Acknowledgments
-This project is based on the work of [Author Name], available at [GitHub Repository Link].
+
 .
 
 Feel free to modify the contents to fit your project and add any additional sections or information you find relevant.
