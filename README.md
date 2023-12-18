@@ -31,6 +31,4 @@ Example
 An example generated melody is provided in generated_melody.mid using the default settings.
 
 
-.
-
 Feel free to modify the contents to fit your project and add any additional sections or information you find relevant.
